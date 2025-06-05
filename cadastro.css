@@ -1,70 +1,22 @@
-body {
-    margin: 0;
-    padding: 0;
-    background-color: #000;
-    color: #ff8800;
-    font-family: 'Arial', sans-serif;
-    font-size: 1.2em;
-}
 
-.container {
-    max-width: 600px;
-    margin: 80px auto;
-    padding: 40px;
-    background-color: #111;
-    border: 3px solid #ff8800;
-    border-radius: 15px;
-    box-shadow: 0 0 20px #ff8800;
-}
+/* cadastro.css */
 
-h1 {
-    font-family: 'Orbitron', sans-serif;
-    text-align: center;
-    color: #ffaa33;
-    margin-bottom: 40px;
-    text-shadow: 0 0 10px #ff8800;
-}
+body { background-color: #000; color: #FFA500; font-family: 'Bebas Neue', cursive; display: flex; align-items: center; justify-content: center; height: 100vh; margin: 0; overflow: hidden; }
 
-form {
-    display: flex;
-    flex-direction: column;
-}
+.form-container { background-color: rgba(17, 17, 17, 0.9); padding: 40px; border: 2px solid #FFA500; border-radius: 10px; box-shadow: 0 0 30px #FFA500; animation: entrarDrift 2s ease-in-out; }
 
-label {
-    margin-top: 20px;
-    margin-bottom: 8px;
-    font-weight: bold;
-}
+h1 { text-align: center; font-size: 3rem; margin-bottom: 30px; color: #FFA500; text-shadow: 0 0 10px #FFA500, 0 0 20px #FF4500; }
 
-input, textarea {
-    padding: 12px;
-    border: 2px solid #ff8800;
-    border-radius: 8px;
-    background-color: #222;
-    color: #fff;
-    font-size: 1em;
-    resize: none;
-}
+form { display: flex; flex-direction: column; }
 
-input:focus, textarea:focus {
-    outline: none;
-    border-color: #ffaa33;
-    box-shadow: 0 0 10px #ffaa33;
-}
+input { padding: 10px; margin-bottom: 20px; border: none; border-radius: 5px; font-size: 1.2rem; background-color: #222; color: #FFA500; box-shadow: 0 0 10px #FFA500 inset; }
 
-button {
-    margin-top: 30px;
-    padding: 15px;
-    background-color: #ff8800;
-    color: #000;
-    font-size: 1.1em;
-    font-weight: bold;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
+input::placeholder { color: #FFB347; }
 
-button:hover {
-    background-color: #ffaa33;
-}
+button { padding: 12px; border: none; background-color: #FFA500; color: #000; font-size: 1.5rem; border-radius: 5px; cursor: pointer; box-shadow: 0 0 20px #FF4500; position: relative; overflow: hidden; transition: transform 0.3s; }
+
+button:hover { transform: scale(1.05); animation: neonFlash 1s infinite alternate; }
+
+@keyframes neonFlash { from { box-shadow: 0 0 10px #FFA500, 0 0 20px #FF4500; } to { box-shadow: 0 0 20px #FF4500, 0 0 40px #FFA500; } }
+
+@keyframes entrarDrift { 0% { transform: translateX(-100%) rotate(-10deg); opacity: 0; } 100% { transform: translateX(0) rotate(0); opacity: 1; } }
