@@ -1,33 +1,130 @@
+body {
+  background-color: #000;
+  color: #FFA500;
+  font-family: 'Bebas Neue', cursive;
+  margin: 0;
+  padding: 0;
+}
 
-/* style.css */
+header {
+  background-color: #111;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 3px solid #FFA500;
+}
 
-body { background-color: #000; color: #FFA500; font-family: Arial, sans-serif; margin: 0; padding: 0; }
+header h1 {
+  font-size: 4rem;
+  margin: 0;
+  color: #FFA500;
+  text-shadow: 0 0 10px #FF4500;
+}
 
-header { background-color: #111; padding: 20px; text-align: center; border-bottom: 2px solid #FFA500; }
+nav {
+  margin-top: 10px;
+}
 
-header h1 { font-family: 'Bebas Neue', cursive; font-size: 3.5rem; color: #FFA500; text-transform: uppercase; margin: 0; }
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #FFA500;
+  transition: 0.3s;
+}
 
-nav { margin-top: 10px; }
+nav a:hover {
+  color: #fff;
+}
 
-nav a { color: #FFA500; margin: 0 10px; text-decoration: none; font-weight: bold; transition: color 0.3s; }
+.topo {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+  flex-wrap: wrap;
+}
 
-nav a:hover { color: #fff; }
+.capa-site img {
+  max-width: 400px;
+  border: 4px solid #FFA500;
+  box-shadow: 0 0 20px #FF4500;
+}
 
-.principal { display: flex; flex-wrap: wrap; padding: 20px; }
+.login-box {
+  background-color: #111;
+  padding: 30px;
+  border: 2px solid #FFA500;
+  border-radius: 10px;
+  box-shadow: 0 0 30px #FFA500;
+  width: 300px;
+}
 
-.resumo { flex: 1; padding-right: 30px; min-width: 400px; }
+.login-box h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #FFA500;
+  margin-bottom: 20px;
+}
 
-.imagem { flex: 1; text-align: center; min-width: 300px; }
+.login-box input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  background-color: #222;
+  color: #FFA500;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+}
 
-.imagem img { max-width: 100%; height: auto; border: 3px solid #FFA500; }
+.login-box button {
+  width: 100%;
+  padding: 12px;
+  background-color: #FFA500;
+  color: #000;
+  font-size: 1.3rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
 
-.atores { padding: 30px; background-color: #111; border-top: 2px solid #FFA500; }
+.login-box button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #FF4500;
+}
 
-.atores h2 { font-family: 'Bebas Neue', cursive; font-size: 2.5rem; color: #FFA500; }
+.catalogo {
+  padding: 40px;
+  text-align: center;
+}
 
-.atores ul { list-style: none; padding: 0; }
+.catalogo h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
 
-.atores li { padding: 8px 0; font-size: 1.2rem; border-bottom: 1px solid #FFA500; }
+.filmes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
 
-@media (max-width: 768px) { .principal { flex-direction: column; } }
+.filme {
+  background-color: #111;
+  padding: 10px;
+  border-radius: 8px;
+  border: 2px solid #FFA500;
+  box-shadow: 0 0 15px #FF4500;
+  text-align: center;
+}
 
+.filme img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.filme p {
+  margin-top: 10px;
+  font-size: 1.1rem;
+}
