@@ -1,130 +1,131 @@
+/* style.css para KittyCine */
+
 body {
-  background-color: #000;
-  color: #FFA500;
-  font-family: 'Bebas Neue', cursive;
   margin: 0;
   padding: 0;
+  background-color: #000;
+  color: #FFA500;
+  font-family: 'Roboto', sans-serif;
 }
 
 header {
-  background-color: #111;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #000;
   padding: 20px;
-  text-align: center;
   border-bottom: 3px solid #FFA500;
 }
 
-header h1 {
-  font-size: 4rem;
-  margin: 0;
-  color: #FFA500;
-  text-shadow: 0 0 10px #FF4500;
+.logo img {
+  height: 80px;
+  width: auto;
+  background: transparent;
+  border: none;
+  box-shadow: none;
 }
 
-nav {
-  margin-top: 10px;
+title {
+  font-family: 'Orbitron', sans-serif;
 }
 
 nav a {
+  color: #FFA500;
   margin: 0 15px;
   text-decoration: none;
-  color: #FFA500;
-  transition: 0.3s;
+  font-weight: bold;
+  font-size: 1.2rem;
+  transition: color 0.3s;
 }
 
 nav a:hover {
-  color: #fff;
+  color: white;
 }
 
-.topo {
+main {
+  padding: 40px 20px;
   display: flex;
-  justify-content: space-between;
-  padding: 40px;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
 }
 
-.capa-site img {
-  max-width: 400px;
-  border: 4px solid #FFA500;
-  box-shadow: 0 0 20px #FF4500;
-}
-
-.login-box {
-  background-color: #111;
-  padding: 30px;
-  border: 2px solid #FFA500;
+.banner {
+  width: 100%;
+  height: 300px;
+  background-image: url('capa-kittycine.jpg');
+  background-size: cover;
+  background-position: center;
   border-radius: 10px;
-  box-shadow: 0 0 30px #FFA500;
-  width: 300px;
+  box-shadow: 0 0 40px #FFA50055;
+  margin-bottom: 30px;
 }
 
-.login-box h2 {
+h1 {
+  font-family: 'Orbitron', sans-serif;
+  color: #FFA500;
+  font-size: 2.5rem;
   text-align: center;
-  font-size: 2rem;
-  color: #FFA500;
-  margin-bottom: 20px;
+  text-shadow: 0 0 10px #FFA500, 0 0 20px #FF4500;
 }
 
-.login-box input {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 15px;
-  background-color: #222;
-  color: #FFA500;
-  border: none;
-  border-radius: 5px;
-  font-size: 1.1rem;
+.categorias {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin: 30px 0;
 }
 
-.login-box button {
-  width: 100%;
-  padding: 12px;
+.categoria {
+  background-color: #111;
+  padding: 10px 20px;
+  border: 2px solid #FFA500;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: 'Orbitron', sans-serif;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.categoria:hover {
   background-color: #FFA500;
   color: #000;
-  font-size: 1.3rem;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: transform 0.3s;
-}
-
-.login-box button:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 15px #FF4500;
-}
-
-.catalogo {
-  padding: 40px;
-  text-align: center;
-}
-
-.catalogo h2 {
-  font-size: 3rem;
-  margin-bottom: 20px;
 }
 
 .filmes {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 20px;
-  justify-items: center;
+  padding: 20px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .filme {
   background-color: #111;
-  padding: 10px;
-  border-radius: 8px;
   border: 2px solid #FFA500;
-  box-shadow: 0 0 15px #FF4500;
-  text-align: center;
+  border-radius: 10px;
+  padding: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.filme:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #FFA500;
 }
 
 .filme img {
   width: 100%;
-  height: auto;
-  border-radius: 5px;
+  border-radius: 6px;
 }
 
-.filme p {
+.filme h3 {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
   margin-top: 10px;
-  font-size: 1.1rem;
+  font-size: 1rem;
+  color: #FFA500;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Roboto&display=swap');

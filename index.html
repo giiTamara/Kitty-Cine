@@ -1,48 +1,52 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <title>KittyCine: A Sua Melhor Plataforma Para Assistir Filmes Gratuitos!</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>KittyCine - Assista Filmes e Séries Grátis</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Roboto&display=swap" rel="stylesheet" />
 </head>
 <body>
   <header>
-    <h1>KittyCine: A Sua Melhor Plataforma Para Assistir Filmes Gratuitos!</h1>
+    <div class="logo">
+      <img src="logo-kittycine.png" alt="Logo KittyCine" />
+    </div>
+    <h1>KittyCine: A sua melhor plataforma para assistir filmes gratuitos!</h1>
     <nav>
-      <a href="#">Início</a>
+      <a href="index.html">Início</a>
       <a href="#">Categorias</a>
       <a href="#">Lançamentos</a>
+      <a href="login.html">Login</a>
     </nav>
   </header>
 
-  <main class="topo">
-    <div class="capa-site">
-      <img src="kittycine.jpg.jfif" alt="Capa KittyCine">
-    </div>
+  <section class="categorias">
+    <h2>Categorias</h2>
+    <ul>
+      <li>Ação</li>
+      <li>Comédia</li>
+      <li>Drama</li>
+      <li>Romance</li>
+      <li>Terror</li>
+      <li>Animação</li>
+      <li>Suspense</li>
+      <li>Ficção Científica</li>
+    </ul>
+  </section>
 
-    <div class="login-box">
-      <h2>Login</h2>
-      <form action="#">
-        <input type="text" placeholder="Usuário">
-        <input type="password" placeholder="Senha">
-        <button type="submit">Entrar</button>
-      </form>
+  <main class="filmes">
+    <h2>Populares no KittyCine</h2>
+    <div class="galeria">
+      <img src="filmes/vingadores.jpg" alt="Vingadores Ultimato">
+      <img src="filmes/tokyo-drift.jpg" alt="Velozes e Furiosos: Desafio em Tóquio">
+      <img src="filmes/barbie.jpg" alt="Barbie">
+      <img src="filmes/avatar2.jpg" alt="Avatar 2">
+      <img src="filmes/jogos-vorazes.jpg" alt="Jogos Vorazes">
+      <img src="filmes/homem-aranha.jpg" alt="Homem-Aranha: Sem Volta Para Casa">
+      <img src="filmes/mario.jpg" alt="Super Mario Bros">
+      <img src="filmes/matrix.jpg" alt="Matrix">
     </div>
   </main>
-
-  <section class="catalogo">
-    <h2>Filmes Populares</h2>
-    <div class="filmes">
-      <div class="filme"><img src="filme1.jpg" alt="Filme 1"><p>Velozes e Furiosos</p></div>
-      <div class="filme"><img src="filme2.jpg" alt="Filme 2"><p>Homem-Aranha: Sem Volta Para Casa</p></div>
-      <div class="filme"><img src="filme3.jpg" alt="Filme 3"><p>Pantera Negra</p></div>
-      <div class="filme"><img src="filme4.jpg" alt="Filme 4"><p>Stranger Things</p></div>
-      <div class="filme"><img src="filme5.jpg" alt="Filme 5"><p>Barbie</p></div>
-      <div class="filme"><img src="filme6.jpg" alt="Filme 6"><p>Harry Potter</p></div>
-      <div class="filme"><img src="filme7.jpg" alt="Filme 7"><p>Breaking Bad</p></div>
-      <div class="filme"><img src="filme8.jpg" alt="Filme 8"><p>Oppenheimer</p></div>
-    </div>
-  </section>
 </body>
 </html>
